@@ -1,5 +1,51 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'UHFNXM,VAHOJA'}
+      name: label_1
+      properties: {font_size: 17, role: headline, text: Feedback Form}
+      type: Label
+    - layout_properties: {grid_position: 'BKMEQD,EMJAJI'}
+      name: label_2
+      properties: {text: 'Name: '}
+      type: Label
+    - layout_properties: {grid_position: 'BKMEQD,PGVXZF'}
+      name: name_box
+      properties: {}
+      type: TextBox
+    - layout_properties: {grid_position: 'VDGTTD,KJHOTP'}
+      name: label_3
+      properties: {text: 'Email: '}
+      type: Label
+    - layout_properties: {grid_position: 'VDGTTD,XSGUYW'}
+      name: email_box
+      properties: {}
+      type: TextBox
+    - layout_properties: {grid_position: 'TOESTX,NOZIPF'}
+      name: label_4
+      properties: {text: 'Feedback:'}
+      type: Label
+    - layout_properties: {grid_position: 'TOESTX,MAHFKH'}
+      name: feedback_box
+      properties: {}
+      type: TextBox
+    - event_bindings: {click: submit_button_click}
+      layout_properties: {grid_position: 'JIOXZG,BSSELA'}
+      name: submit_button
+      properties:
+        role: primary-color
+        text: |
+          submit
+      type: Button
+    layout_properties: {grid_position: 'LPTCMH,BSGKDX'}
+    name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'EFHBMN,YYJOYY'}
+    name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel
