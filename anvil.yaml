@@ -1,0 +1,10 @@
+allow_embedding: false
+name: Material Design 1
+package_name: Material_Design_1
+runtime_options:
+  client_version: '3'
+  server_spec: {base: python310-minimal}
+  server_version: python3-sandbox
+  version: 2
+services: []
+startup_form: Form1
