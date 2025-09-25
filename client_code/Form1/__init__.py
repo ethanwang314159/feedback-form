@@ -21,3 +21,4 @@ class Form1(Form1Template):
     self.name_box.text = ""
     self.email_box.text = ""
     self.feedback_box.text = ""
+    self.rec
